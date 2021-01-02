@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+       <GridPane fx:id="gameBoard" BorderPane.alignment="CENTER">
+           <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="100.0" />
+           </columnConstraints>
+           <rowConstraints>
+               <RowConstraints minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+           <Button fx:id="b1" focusTraversable="false" mnemonicParsing="false" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" textFill="#4f0ec7">
+            <font>
+               <Font name="System Bold" size="36.0" />
+            </font></Button>
+           <Button fx:id="b2" focusTraversable="false" mnemonicParsing="false" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" textFill="#4f0ec7" GridPane.columnIndex="1">
+            <font>
+               <Font name="System Bold" size="36.0" />
+            </font></Button>
+           <Button fx:id="b3" focusTraversable="false" mnemonicParsing="false" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" textFill="#4f0ec7" GridPane.columnIndex="2">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font></Button>
+           <Button fx:id="b4" focusTraversable="false" mnemonicParsing="false" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" textFill="#4f0ec7" GridPane.rowIndex="1">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font></Button>
+           <Button fx:id="b5" focusTraversable="false" mnemonicParsing="false" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" textFill="#4f0ec7" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font></Button>
+           <Button fx:id="b6" focusTraversable="false" mnemonicParsing="false" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" textFill="#4f0ec7" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font></Button>
+           <Button fx:id="b7" focusTraversable="false" mnemonicParsing="false" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" textFill="#4f0ec7" GridPane.rowIndex="2">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font></Button>
+           <Button fx:id="b8" focusTraversable="false" mnemonicParsing="false" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" textFill="#4f0ec7" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font></Button>
+           <Button fx:id="b9" focusTraversable="false" mnemonicParsing="false" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" textFill="#4f0ec7" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font></Button>
+       </GridPane>
+   </center>
+   <top>
+       <MenuBar BorderPane.alignment="CENTER">
+           <Menu mnemonicParsing="false" text="Action">
+               <MenuItem mnemonicParsing="false" onAction="#menuClickHandler" text="Play" />
+               <MenuItem mnemonicParsing="false" text="Quit" />
+           </Menu>
+           <Menu mnemonicParsing="false" text="Help">
+               <MenuItem mnemonicParsing="false" text="How to Play" />
+               <MenuItem mnemonicParsing="false" text="About" />
+           </Menu>
+       </MenuBar>
+   </top>
+</BorderPane>
